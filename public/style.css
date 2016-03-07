@@ -1,0 +1,35 @@
+.wikiContainer {
+  display: flex;
+}
+
+.wikiContainer > * {
+  flex: 0 0 auto;
+}
+
+.wikiContainer > .content {
+  flex: 1 0 auto;
+  width: 400px;
+}
+
+.wikiContainer > .menu {
+  width: 400px;
+  height: 750px;
+  overflow-y: auto;
+}
+
+.wikiContainer > .menu > * {
+  display: block;
+  padding: 6px;
+  margin: 4px;
+  box-shadow: 0 0 4px #aaa;
+  border-radius: 2px;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.content, .content > *, .content > * > * {
+  padding-left: 16px;
+  word-break: break-all;
+}
